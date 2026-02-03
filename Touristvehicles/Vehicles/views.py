@@ -18,3 +18,6 @@ def packages(request):
 
 def services(request):
     return render(request,'Services.html')
+
+def gallery(request):
+    return render(request,'Gallery.html')
