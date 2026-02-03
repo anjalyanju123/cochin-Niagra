@@ -1,0 +1,63 @@
+{% extends 'Base.html' %}
+
+{% block title %}
+Packages|Cochin Niagra
+{% endblock %}
+
+{% block content %}
+<section class="packages_section">
+    <h1 style="color: rgb(3, 57, 3); margin-top: 30px;">Our Packages</h1>
+    <div class="package_section_inner">
+    <div class="package_card">
+        <div class="package1_card_left">
+            <img width="300" height="300" src="https://www.savaari.com/blog/wp-content/uploads/2023/06/Sabarimala-temple-full-view.jpg"
+                alt="Package Image">
+        </div>
+        <div class="package1_card_right">
+           <h3>Shabarimala Trips</h3>
+            <p>Experience the spiritual journey to the revered Sabarimala temple with our specialized trip packages. We provide comfortable transportation and guided tours to ensure a memorable pilgrimage.</p>
+             <a href="{% url 'contact' %}"><button>Contact</button></a>
+             <a href="{% url 'services' %}"><button>Vehicles</button></a>
+        </div>
+    </div>
+    <div class="package_card2">
+        <div class="package2_card_left">
+            <h3>Tour Packages</h3>
+            <p>Discover the beauty of Kerala with our exclusive tour packages. From the serene backwaters to the lush hill stations, we offer customized itineraries that cater to your interests and preferences.</p>
+             <a href="{% url 'contact' %}"><button>Contact</button></a>
+             <a href="{% url 'services' %}"><button>Vehicles</button></a>
+             
+        </div>
+        <div class="package2_card_right">
+            <img width="300" height="300" src="https://images.pexels.com/photos/33347813/pexels-photo-33347813.jpeg"
+                alt="Package Image">
+        </div>
+    </div>
+    <div class="package_card">
+        <div class="package1_card_left">
+            <img width="300" height="300" src="https://media.istockphoto.com/id/519089230/photo/munnar-india.webp?a=1&b=1&s=612x612&w=0&k=20&c=MwTt_B2iluk_0HAoeQXvX_sMPhAUnK10LtpFpK_OXqo="
+                alt="Package Image">
+        </div>
+        <div class="package1_card_right">
+           <h3>Outstation Trips</h3>
+            <p>Explore the diverse landscapes of India with our outstation trip packages. Whether you're interested in historical sites, natural wonders, or cultural experiences, we have curated trips to suit every traveler's taste.</p>
+            <a href="{% url 'contact' %}"><button>Contact</button></a>
+             <a href="{% url 'services' %}"><button>Vehicles</button></a>
+        </div>
+    </div>
+    <div class="package_card2">
+        <div class="package2_card_left">
+            <h3>Local Packages</h3>
+            <p>Discover the hidden gems of your local area with our exclusive local packages. From scenic spots to cultural landmarks, we offer tailored experiences that showcase the unique charm of your region.</p>
+            <a href="{% url 'contact' %}"><button>Contact</button></a>
+             <a href="{% url 'services' %}"><button>Vehicles</button></a>
+
+        </div>
+        <div class="package2_card_right">
+            <img width="300" height="300" src="https://tse4.mm.bing.net/th/id/OIP.AUg5FQFlM2pxRsDDsZygTgAAAA?w=300&h=224&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Package Image">
+        </div>
+    </div>
+    </div>
+</section>   
+{% endblock %}

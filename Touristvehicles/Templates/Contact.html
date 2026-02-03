@@ -1,0 +1,35 @@
+{% extends 'Base.html' %}
+
+{% block title %}
+Contact|Cochin Niagra
+{% endblock %}
+
+{% block content %}
+
+<section class="contact_section">
+    <div class="contact_map_section">
+        <div class="home_contact_mapinner">
+            <div class="contact_section_map animate__animated">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d14022.095968108768!2d76.3930418374538!3d10.175972048430475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDEwJzM0LjIiTiA3NsKwMjMnNTcuOSJF!5e0!3m2!1sen!2sin!4v1768978442775!5m2!1sen!2sin"
+                    width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="contact_contact_us animate__animated">
+                <h1 style="color: rgb(3, 68, 3); font-weight:600;">Contact Us</h1>
+                <form method="post" class="home_contact_form">
+                    {% csrf_token %}
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="text" name="phone" placeholder="Your Phone" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea> <br>
+                    <button class="contact_send_btn" type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</section>
+{% endblock %}

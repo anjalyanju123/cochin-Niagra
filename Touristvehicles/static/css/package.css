@@ -1,0 +1,137 @@
+.packages_section{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.package_section_inner{
+    width: 80%;
+    margin-top: 30px;
+    height: auto;
+    color: rgb(19, 109, 19);
+}
+
+.package_section_inner h3{
+    font-weight: 600;
+}
+.package_section_inner img{
+    border-radius: 10px;
+}
+.package_card{
+    width: 70%;
+    display: flex;
+    border-radius: 5px;
+}
+.package_card2{
+    margin-left: 25%;
+    width: 70%;
+    display: flex;
+    border-radius: 5px;
+}
+.package1_card_right{
+    padding-left: 60px;
+    padding-top: 40px;
+    padding-right: 40px;
+}
+.package2_card_left{
+    flex: 2;
+    padding-left: 60px;
+    padding-top: 40px;
+    padding-right: 40px;
+    text-align: right;
+}
+.package2_card_right{
+    flex: 1;
+}
+
+.package_section_inner button {
+    border: none;
+    background-color: green;
+    color: white;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.package_section_inner button:hover {
+    background-color: rgb(2, 68, 2);
+}
+@media (max-width: 768px) {
+
+    .package_section_inner {
+        width: 95%;
+    }
+    .package_section_inner h3,p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .package_section_inner button{
+        place-content: center;
+    }
+    .package_card,
+    .package_card2 {
+        width: 100%;
+        margin-left: 0;           
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .package1_card_right,
+    .package2_card_left {
+        padding: 20px;   
+        text-align: center;       
+    }
+
+    .package2_card_left h3,
+    .package2_card_left p {
+        text-align: center;
+    }
+
+    .package1_card_left img,
+    .package2_card_right img {
+        width: 100%;
+        max-width: 350px;
+        height: 250px;
+        margin: auto;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .package_section_inner {
+        width: 90%;
+    }
+
+    .package_card2 {
+        margin-left: 10%;  
+    }
+     .package_card,
+    .package_card2 {
+        width: 100%;
+        margin-left: 0;           
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 30px;
+    }
+
+    .package1_card_left img,
+    .package2_card_right img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .package_section_inner p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+    .package2_card_left button{
+        position: absolute;
+        right: 30px;
+    }
+}
