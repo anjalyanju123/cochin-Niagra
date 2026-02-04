@@ -52,7 +52,7 @@ MIDDLEWARE = [
 ]
 
 ALLOWED_HOSTS = [
-    "cochin-niagra-8.onrender.com",
+    "cochin-niagra-10.onrender.com",
     "localhost",
     "127.0.0.1",
 ]
