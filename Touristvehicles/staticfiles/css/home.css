@@ -1,0 +1,459 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+.home_section {
+    width: 100%;
+    height: auto;
+}
+
+.home_first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://images.pexels.com/photos/3848200/pexels-photo-3848200.jpeg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 650px;
+    background-attachment: fixed;
+}
+
+.our_packagesection {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+.packagesection_first {
+    width: 80%;
+    height: 500px;
+    padding-top: 40px;
+}
+
+.cards {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgba(128, 128, 128, 0.433);
+    border-radius: 5px;
+    opacity: 0;
+}
+
+.cards:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+    background-color: rgba(199, 234, 199, 0.489);
+    color: green;
+}
+
+.cards img {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 10px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.Home_about {
+    width: 80%;
+    height: 350px;
+    margin-left: 5%;
+    display: flex;
+    background-color: rgba(199, 234, 199, 0.197);
+}
+
+.home_about_left {
+    flex: 1;
+}
+
+.home_about_left img {
+    width: 100%;
+    height: 100%;
+}
+
+.home_about_right {
+    flex: 2;
+    padding-left: 60px;
+    padding-top: 40px;
+    padding-right: 40px;
+}
+
+.home_about_right p {
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.customer_support_section {
+    width: 100%;
+    margin-top: 50px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.customer_support_inner {
+    width: 100%;
+    height: 200px;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.customer_support_inner .col-lg-3 {
+    text-align: center;
+}
+
+/* ---------------------------home contact map / contact seciton --------------------------- */
+.home_section_map,
+.home_contact_us {
+    opacity: 0;
+    height: 500px;
+}
+
+.contact_section_map,
+.contact_contact_us {
+    opacity: 1;
+    height: 500px;
+}
+.home_contact_map_section,
+.contact_map_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.home_contact_mapinner {
+    width: 70%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_section_map,
+.contact_section_map{
+    flex: 1;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact_contact_us ,
+.home_contact_us {
+    flex: 2;
+    width: 100%;
+    padding: 20px;
+    padding-left: 40px;
+    background: linear-gradient(to right,
+            rgba(199, 234, 199, 0.651),
+            rgba(230, 245, 230, 0.2));
+}
+
+.home_contact_form input,
+textarea {
+    width: 60%;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.433);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.home_contact_form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.home_contact_form input:focus,
+textarea:focus {
+    outline: none;
+    border: 2px solid green;
+}
+
+/* ----------------------home carousel-------------------------- */
+.home_first .carousel {
+    width: 30%;
+    color: white;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home_first .carousel h3 {
+    font-weight: 700;
+    color: white;
+}
+
+.sideline {
+    height: 200px;
+    width: 2px;
+    background-color: white;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.contact-btn {
+    background-color: rgba(238, 247, 238, 0.995);
+    color: green;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.contact-btn:hover {
+    box-shadow: 0 8px 16px 0 rgba(221, 227, 221, 0.2), 0 12px 40px 0 rgba(194, 225, 200, 0.19);
+    transition: 0.3s;
+}
+
+.contact_send_btn {
+    margin-top: 10px;
+    background-color: green;
+    color: white;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.contact_send_btn:hover {
+    background-color: rgb(2, 68, 2);
+}
+
+/* ======================= Home gallery ================================= */
+
+.home_gallery {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home_gallery_inner {
+    width: 60%;
+    height: auto;
+}
+
+.gallery_images_row1,
+.gallery_images_row2 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.gallery_img_box {
+    overflow: hidden;
+    display: flex;        
+    justify-content: center;
+}
+
+/* image zoom */
+.gallery_img_box img {
+    transition: transform 0.4s ease;
+    transform-origin: center center;
+    will-change: transform; /* smoother animation */
+}
+
+.gallery_img_box img:hover {
+    transform: scale(1.2);
+}
+
+
+/* ------------------- TABLET ------------------- */
+@media screen and (max-width: 992px) {
+
+    /* HERO */
+    .home_first {
+        height: 550px;
+        background-attachment: scroll;
+    }
+
+    /* ABOUT */
+    .Home_about {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        margin-left: 5%;
+    }
+
+    .home_about_left,
+    .home_about_right {
+        width: 100%;
+    }
+
+    .home_about_right {
+        padding: 30px;
+    }
+
+    /* PACKAGE CARDS */
+    .packagesection_first {
+        width: 100%;
+        height: auto;
+    }
+
+    .cards {
+        width: 260px;
+        height: auto;
+    }
+
+    /* CONTACT + MAP */
+    .home_contact_mapinner {
+        width: 90%;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .home_section_map,
+    .home_contact_us,
+    .contact_section_map,
+    .contact_contact_us {
+        width: 100%;
+        height: auto;
+    }
+
+    .home_contact_form input,
+    .home_contact_form textarea {
+        width: 90%;
+    }
+
+    /* CAROUSEL */
+    .home_first .carousel {
+        width: 60%;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* GALLERY */
+    .home_gallery_inner {
+        width: 80%;
+        height: 40%;
+    }
+}
+/* ------------------- MOBILE ------------------- */
+@media screen and (max-width: 576px) {
+
+    /* HERO */
+    .home_first {
+        height: 420px;
+        background-position: center;
+    }
+
+    /* CAROUSEL */
+    .carousel {
+        width: 95%;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .home_first .carousel {
+        width: 100%;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .home_first .carousel h3 {
+        font-size: 20px;
+    }
+
+    .home_first .carousel p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .sideline {
+        display: none;
+    }
+
+    /* ABOUT */
+    .Home_about {
+        width: 100%;
+        margin: 0;
+        display: block;
+    }
+
+    .home_about_right {
+        padding: 20px;
+    }
+
+    /* PACKAGE SECTION */
+    .our_packagesection,
+    .packagesection_first {
+        height: auto;
+        width: 100%;
+    }
+
+    .cards {
+        width: 100%;
+        max-width: 320px;
+        margin: auto;
+        padding: auto;
+    }
+
+    /* CUSTOMER SUPPORT */
+    .customer_support_inner {
+        flex-direction: column;
+        height: auto;
+        margin-left: 0;
+        gap: 20px;
+    }
+
+    /* CONTACT */
+    .home_contact_mapinner {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .home_contact_form input,
+    .home_contact_form textarea {
+        width: 100%;
+    }
+
+    .home_gallery h1 {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .home_gallery_inner {
+        width: 90%;
+    }
+
+    .gallery_images_row1,
+    .gallery_images_row2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* remove all negative margins */
+    .gallery_img_box {
+        margin-top: 0 !important;
+    }
+
+    .gallery_img_box img {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        border-radius: 6px;
+    }
+}
