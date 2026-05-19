@@ -7,7 +7,7 @@ Home|Cochin Niagra
 {% block content %}
 <section class="home_section">
     <div class="our_packagesection">
-        <h1>Our Packages</h1>
+        <h1 style="color: rgb(3, 68, 3); font-weight:600;">Our Packages</h1>
         <div class="row packagesection_first">
             <div class="col-lg-4">
                 <div class="cards">
@@ -77,7 +77,7 @@ Home|Cochin Niagra
             <img src="https://images.pexels.com/photos/804129/pexels-photo-804129.jpeg" alt="img">
         </div>
         <div class="home_about_right">
-            <h1 style="color: rgb(3, 68, 3);">About Us</h1>
+            <h1  style="color: rgb(3, 68, 3); font-weight:600;">About Us</h1>
             <p>
                 Cochin Niagara is a premier taxi service based in Cochin, Kerala. We specialize in providing reliable
                 and comfortable transportation solutions for travelers exploring the scenic beauty and rich cultural
@@ -123,7 +123,7 @@ Home|Cochin Niagra
 
             <div class="home_contact_us animate__animated">
                 <h1 style="color: rgb(3, 68, 3); font-weight:600;">Contact Us</h1>
-                <form method="post" class="home_contact_form">
+                <form method="post" action="{% url 'contact' %}"  class="home_contact_form">
                     {% csrf_token %}
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="text" name="phone" placeholder="Your Phone" required>

@@ -18,7 +18,7 @@ Contact|Cochin Niagra
 
             <div class="contact_contact_us animate__animated">
                 <h1 style="color: rgb(3, 68, 3); font-weight:600;">Contact Us</h1>
-                <form method="post" class="home_contact_form">
+                <form method="post" action="{% url 'contact' %}"  class="home_contact_form">
                     {% csrf_token %}
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="text" name="phone" placeholder="Your Phone" required>
